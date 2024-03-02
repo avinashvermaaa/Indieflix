@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+  <title>Indieflix</title>
+    <style>
+h1 {
+  /* margin : 50px auto 0 auto;  */
+  font-size: 5.625rem;
+  /* font-family: 'Sacramento', cursive; */
+  margin: 2px 2px 2px 2px;
+  color: #66BFBF;
+}
+        #search-box {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  background-color: #242323;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+#search-box::before {
+  content: url('path/to/icon.png'); 
+  position: absolute;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+#search-box input[type="text"] {
+  border: none;
+  padding: 10px 10px 10px 40px;
+  flex-grow: 1;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#search-box button {
+  background-color: #008CBA;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #333333;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333333;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #FFFFFF;
+      }
+      nav a {
+        color: #FFFFFF;
+        text-decoration: none;
+        font-weight: bold;
+        margin-left: 20px;
+        padding: 10px;
+        transition: all 0.3s ease;
+      }
+      nav a:hover {
+        background-color: #008CBA;
+      }
+      nav a:first-child {
+        margin-left: 0;
+      }
+      #search-box {
+        display: flex;
+        align-items: center;
+        margin: 20px;
+        background-color: #FFFFFF;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+      #search-box input[type="text"] {
+        border: none;
+        padding: 10px;
+        flex-grow: 1;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      #search-box button {
+        background-color: #008CBA;
+        color: #FFFFFF;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+      #search-box button:hover {
+        background-color: #006C7B;
+      }
+      .call-to-action {
+        background-color: #333333;
+        color: #FFFFFF;
+        padding: 60px;
+        text-align: center;
+      }
+      .call-to-action h2 {
+        font-size: 48px;
+        margin-bottom: 20px;
+      }
+      .call-to-action p {
+        font-size: 24px;
+        max-width: 800px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+      }
+      .call-to-action a {
+        display: inline-block;
+        background-color: #FFFFFF;
+        color: #333333;
+        padding: 20px 40px;
+        border-radius: 5px;
+        font-weight: bold;
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+      .call-to-action a:hover {
+        background-color: #008CBA;
+        color: #FFFFFF;
+      }
+      footer {
+        background-color: #333333;
+        color: #FFFFFF;
+        padding: 20px;
+        text-align: center;
+      }
+      #movies-library {
+  margin: auto;
+}
+
+#movies-library h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #F5F5F5;
+}
+
+#movies-library ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 0px;
+}
+
+#movies-library li {
+  width: 150px;
+  margin: auto;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+
+}
+
+#movies-library li img {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: auto;
+
+}
+#movies-library li img:hover{
+
+}
+
+#movies-library li h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0;
+  text-align: center;
+}
+
+#movies-library li p {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+    </style>
+  </head>
+  <body>
+    <!-- <h1>Indieflix</h1> -->
+    <header>
+      <nav> <h1>Indieflix</h1>    
+        <div id="search-box">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Search</button>
+          </div>             
+        </nav>                                          
+        <nav>  
+        <a href="index.html">Home</a>
+        <a href="movies.html">Movies</a>
+        <a href="anime.html">Anime</a>
+        <a href="webseries.html">Web Series</a>
+        <a href="contact.html">Contact</a>
+        <a href="login\index.html">Login</a>
+        <a href="login\sign up\register.html">Sign Up</a>
+      </nav>
+       
+        <div id="movies-library">
+  <h2>Anime</h2>
+
+  <ul>
+       <li>
+      <a href="images\4.mp4"><img src="images\demon.jpeg" alt="Movie Title">
+      <h3>Demon Slayer</h3>
+      <p>Release Year: 2021</p></a>
+    </li>
+    <li>
+      <a href="images\5.mp4"><img src="images\note.jpeg" alt="Movie Title">
+      <h3>Death Note</h3>
+      <p>Release Year: 2021</p></a>
+    </li>
+    <li>
+      <a href="images\6.mp4"><img src="images\one.jpeg" alt="Movie Title">
+      <h3>One Piece</h3>
+      <p>Release Year: 1999</p></a>
+    </li>
+   
+    <li>
+      <a href="images\4.mp4"><img src="images\demon.jpeg" alt="Movie Title">
+      <h3>Demon Slayer</h3>
+      <p>Release Year: 2021</p></a>
+    </li>
+    <li>
+      <a href="images\5.mp4"><img src="images\note.jpeg" alt="Movie Title">
+      <h3>Death Note</h3>
+      <p>Release Year: 2021</p></a>
+    </li>
+    <li>
+      <a href="images\6.mp4"><img src="images\one.jpeg" alt="Movie Title">
+      <h3>One Piece</h3>
+      <p>Release Year: 1999</p></a>
+    </li>
+  </ul>
+
+
+
+  
+  <ul>
+    <li>
+   <a href="images\4.mp4"><img src="images\demon.jpeg" alt="Movie Title">
+   <h3>Demon Slayer</h3>
+   <p>Release Year: 2021</p></a>
+ </li>
+ <li>
+   <a href="images\5.mp4"><img src="images\note.jpeg" alt="Movie Title">
+   <h3>Death Note</h3>
+   <p>Release Year: 2021</p></a>
+ </li>
+ <li>
+   <a href="images\6.mp4"><img src="images\one.jpeg" alt="Movie Title">
+   <h3>One Piece</h3>
+   <p>Release Year: 1999</p></a>
+ </li>
+
+ <li>
+   <a href="images\4.mp4"><img src="images\demon.jpeg" alt="Movie Title">
+   <h3>Demon Slayer</h3>
+   <p>Release Year: 2021</p></a>
+ </li>
+ <li>
+   <a href="images\5.mp4"><img src="images\note.jpeg" alt="Movie Title">
+   <h3>Death Note</h3>
+   <p>Release Year: 2021</p></a>
+ </li>
+ <li>
+   <a href="images\6.mp4"><img src="images\one.jpeg" alt="Movie Title">
+   <h3>One Piece</h3>
+   <p>Release Year: 1999</p></a>
+ </li>
+</ul>
+
+<!-- new row of 6 movies -->
+
+
+<ul>
+  <li>
+ <a href="images\4.mp4"><img src="images\demon.jpeg" alt="Movie Title">
+ <h3>Demon Slayer</h3>
+ <p>Release Year: 2021</p></a>
+</li>
+<li>
+ <a href="images\5.mp4"><img src="images\note.jpeg" alt="Movie Title">
+ <h3>Death Note</h3>
+ <p>Release Year: 2021</p></a>
+</li>
+<li>
+ <a href="images\6.mp4"><img src="images\one.jpeg" alt="Movie Title">
+ <h3>One Piece</h3>
+ <p>Release Year: 1999</p></a>
+</li>
+
+<li>
+ <a href="images\4.mp4"><img src="images\demon.jpeg" alt="Movie Title">
+ <h3>Demon Slayer</h3>
+ <p>Release Year: 2021</p></a>
+</li>
+<li>
+ <a href="images\5.mp4"><img src="images\note.jpeg" alt="Movie Title">
+ <h3>Death Note</h3>
+ <p>Release Year: 2021</p></a>
+</li>
+<li>
+ <a href="images\6.mp4"><img src="images\one.jpeg" alt="Movie Title">
+ <h3>One Piece</h3>
+ <p>Release Year: 1999</p></a>
+</li>
+</ul>
+
+
+<!-- new row of 6 movies -->
+
+
+<ul>
+  <li>
+ <a href="images\4.mp4"><img src="images\demon.jpeg" alt="Movie Title">
+ <h3>Demon Slayer</h3>
+ <p>Release Year: 2021</p></a>
+</li>
+<li>
+ <a href="images\5.mp4"><img src="images\note.jpeg" alt="Movie Title">
+ <h3>Death Note</h3>
+ <p>Release Year: 2021</p></a>
+</li>
+<li>
+ <a href="images\6.mp4"><img src="images\one.jpeg" alt="Movie Title">
+ <h3>One Piece</h3>
+ <p>Release Year: 1999</p></a>
+</li>
+
+<li>
+ <a href="images\4.mp4"><img src="images\demon.jpeg" alt="Movie Title">
+ <h3>Demon Slayer</h3>
+ <p>Release Year: 2021</p></a>
+</li>
+<li>
+ <a href="images\5.mp4"><img src="images\note.jpeg" alt="Movie Title">
+ <h3>Death Note</h3>
+ <p>Release Year: 2021</p></a>
+</li>
+<li>
+ <a href="images\6.mp4"><img src="images\one.jpeg" alt="Movie Title">
+ <h3>One Piece</h3>
+ <p>Release Year: 1999</p></a>
+</li>
+</ul>
+
+
+<!-- new row of 6 movies -->
+
+
+<ul>
+  <li>
+ <a href="images\4.mp4"><img src="images\demon.jpeg" alt="Movie Title">
+ <h3>Demon Slayer</h3>
+ <p>Release Year: 2021</p></a>
+</li>
+<li>
+ <a href="images\5.mp4"><img src="images\note.jpeg" alt="Movie Title">
+ <h3>Death Note</h3>
+ <p>Release Year: 2021</p></a>
+</li>
+<li>
+ <a href="images\6.mp4"><img src="images\one.jpeg" alt="Movie Title">
+ <h3>One Piece</h3>
+ <p>Release Year: 1999</p></a>
+</li>
+
+<li>
+ <a href="images\4.mp4"><img src="images\demon.jpeg" alt="Movie Title">
+ <h3>Demon Slayer</h3>
+ <p>Release Year: 2021</p></a>
+</li>
+<li>
+ <a href="images\5.mp4"><img src="images\note.jpeg" alt="Movie Title">
+ <h3>Death Note</h3>
+ <p>Release Year: 2021</p></a>
+</li>
+<li>
+ <a href="images\6.mp4"><img src="images\one.jpeg" alt="Movie Title">
+ <h3>One Piece</h3>
+ <p>Release Year: 1999</p></a>
+</li>
+</ul>
+
+</div>
